@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
 .navBarWrapper {
   display: flex;
   background-color: #263238;
