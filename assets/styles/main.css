@@ -15,10 +15,17 @@ h1 {
 a {
   text-decoration: none;
 }
+
 @media (min-width: 240px) {
   .container {
     width: 200px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 280px;
   }
 }
 
