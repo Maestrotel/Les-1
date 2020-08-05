@@ -1,0 +1,46 @@
+.navBarWrapper {
+  display: flex;
+  background-color: #263238;
+  align-items: center;
+}
+
+.nav-bar__logo {
+  padding: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-bar__logo .name {
+  display: block;
+  color: rgb(255,255,255);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-bar__logo .domain {
+  display: block;
+  color: #EF9A9A;
+  font-weight: 100;
+  transition: .3s;
+}
+
+.nav-bar__link {
+  color: #fff;
+  padding: 8px;
+  transition: .3s;
+}
+
+.nav-bar__link:hover {
+  text-decoration: underline;
+}
+
+.nav-bar__logo:hover .domain {
+  transform: rotate(1turn);
+  color: rgb(116, 116, 245);
+}
+
+.nav-bar__user {
+  margin-left: auto;
+  padding: .5rem 1rem;
+  color: #fff;
+}
