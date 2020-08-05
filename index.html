@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  <link rel="stylesheet" href="/assets/styles/middle-text.css">
   <title>Енотики фронта</title>
+  <script>
+    function addCss(name) {
+      const link = document.createElement('link')
+      link.rel = "stylesheet"
+      link.href = `/assets/styles/${name}.css`
+      const head = document.getElementsByTagName('head')
+      head[0].appendChild(link)
+    }
+    addCss('main')
+  </script>
 </head>
-
 <body>
   <nav>
     <div class="navBarWrapper">
@@ -22,35 +28,30 @@
       <div class="nav-bar__user">Dimon</div>
     </div>
   </nav>
+  <script>
+    addCss('navbar')
+  </script>
   <div class="head-baner">
     <div class="head-baner-text">
       Хочу слетать в австралию
     </div>
   </div>
   <script>
-    const link = document.createElement('link')
-    link.rel = "stylesheet"
-    link.href = "/assets/styles/navbar.css"
-    const head = document.getElementsByTagName('head')
-    head[0].appendChild(link)
+    addCss('headBaner')
   </script>
   <div class="middle-text">
-    <p>Австралия (Австралийский Союз, Commonwealth of Australia) занимает континент Австралия,</p> остров
-    ТасманияГеографические координаты: -42.866667,147.316667; Щелкните для просмотра на Google-картах и ряд других
-    островов Индийского, Тихого и Южного океанов. К северу от Австралии расположены Восточный Тимор, Индонезия и Папуа —
-    Новая Гвинея, к северо-востоку — Вануату, Новая Каледония и Соломоновы Острова, к юго-востоку — Новая Зеландия.
-    Австралийский материк разделяет собой Индийский и Тихий океан. Часто по географическому и геополитическому признаку
-    Австралию включают в регион Австралия и Океания.
+    <p>Австралия (Австралийский Союз, Commonwealth of Australia) занимает континент Австралия, остров
+    ТасманияГеографические координаты: -42.866667,147.316667;</p>
+    <p>Щелкните для просмотра на Google-картах и ряд других островов Индийского, Тихого и Южного океанов. К северу от Австралии расположены Восточный Тимор, Индонезия и Папуа —
+    Новая Гвинея, к северо-востоку — Вануату, Новая Каледония и Соломоновы Острова, к юго-востоку — Новая Зеландия.</p>
+    <p>Австралийский материк разделяет собой Индийский и Тихий океан. Часто по географическому и геополитическому признаку
+    Австралию включают в регион Австралия и Океания.</p>
   </div>
+  <script>
+    addCss('middle-text')
+  </script>
   <div class="container">
     <h1 class="m-1">Хай ку привет, здарова</h1>
   </div>
-  <script>
-    const link2 = document.createElement('link')
-    link2.rel = "stylesheet"
-    link2.href = "/assets/styles/headBaner.css"
-    head[0].appendChild(link2)
-  </script>
 </body>
-
 </html>
