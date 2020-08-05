@@ -1,0 +1,10 @@
+.middle-text {
+  width: 300;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  background-color: #fff;
+  color: rgb(7, 7, 7);
+}
