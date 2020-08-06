@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  <link rel="stylesheet" href="/assets/styles/about.css">
   <title>Енотики фронта</title>
+  <script>
+    function addCss(name) {
+      const link = document.createElement('link')
+      link.rel = "stylesheet"
+      link.href = `/assets/styles/${name}.css`
+      const head = document.getElementsByTagName('head')
+      head[0].appendChild(link)
+    }
+    addCss('main')
+  </script>
 </head>
 <body>
   <nav>
@@ -21,16 +29,24 @@
     </div>
   </nav>
   <script>
-    const link = document.createElement('link')
-    link.rel = "stylesheet"
-    link.href = "/assets/styles/navbar.css"
-    const head = document.getElementsByTagName('head')
-    head[0].appendChild(link)
+    addCss('navbar')
   </script>
-  <div class="container bg-white">
-    <h1>Little bit</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, beatae?</p>
-    <img src="/assets/images/pocahontas.jpg" class="d-block m-0auto" alt="pocahontas">    
+  <div class="banner">
+    <div class="banner-text">
+      Свадьба Юрия и Александры!
+    </div>
   </div>
+  <div class="Picture">
+    <img src="/assets/images/Wedding.jpg" alt="Picture" width="100%">
+  </div>
+  <script>
+    addCss('banner')
+  </script>
+  <div class="Wedding-text">
+    <p> День, когда сердца Юрия и Александры слились воедино.</p>
+  </div>
+  <script>
+    addCss('Wedding-text')
+  </script>
 </body>
 </html>
