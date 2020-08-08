@@ -1,15 +1,22 @@
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  max-width: 100%;
-  max-height: 10%;
+footer {
+  background-color: #263238;
+  padding: 1rem;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.footer-items div {
+  background-color: #fff;
+  height: 150px;
 }
 
 .copyright {
   text-align: center;
-  text-decoration: blueviolet;
-  text-shadow: rgba(rgb(226, 206, 206), rgb(178, 189, 178), rgb(135, 135, 141), alpha);
+  color: #fff;
 }
 
 

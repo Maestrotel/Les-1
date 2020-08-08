@@ -1,7 +1,6 @@
 .banner {
   height: 85vh;
   min-height: 100%;
-  background-image: url('/assets/images/Wedding-main.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
