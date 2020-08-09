@@ -73,8 +73,24 @@ a {
   display: block;
 }
 
-.card {
+.card .card-wedding {
   background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0, .2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.card .card-guitar {
+  background-color: rgb(245, 167, 167);
+  box-shadow: 0 0 8px rgba(0,0,0, .2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.card .card-city {
+  background-color: rgb(250, 252, 169);
   box-shadow: 0 0 8px rgba(0,0,0, .2);
   border-radius: 1rem;
   margin: 1rem 0;
@@ -123,7 +139,56 @@ a {
   box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
 }
 
-.cards-wrapper {
+.card .footer-rock button {
+  white-space: nowrap;
+  background-image: url(/assets/images/Button.png);
+  display: block;
+  font-size: 1rem;
+  font-style: unset;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  border: 0;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  outline: none !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card .footer-rock button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+.card .footer-rock button:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
+}
+
+.card .footer-city button {
+  white-space: nowrap;
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  background-color: #06c016;
+  border: 0;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  outline: none !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card .footer-city button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+.card .footer-city button:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
+}
+
+.cards-wrapper .card {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

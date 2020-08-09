@@ -7,11 +7,26 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff
+}
+
+.a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.a:active {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
 }
 
 .footer-items div {
-  background-color: #fff;
-  height: 150px;
+  height: 175px;
 }
 
 .copyright {
