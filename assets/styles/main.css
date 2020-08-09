@@ -97,7 +97,15 @@ a {
   transition: .3s;
 }
 
-.card:hover {
+.card-wedding:hover {
+  transform: scale(1.1);
+}
+
+.card-guitar:hover {
+  transform: scale(1.1);
+}
+
+.card-city:hover {
   transform: scale(1.1);
 }
 
