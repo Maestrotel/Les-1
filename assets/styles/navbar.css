@@ -40,6 +40,8 @@
 }
 
 .nav-bar__user {
+  position: relative; /* Позеционирование блока как обычно но все дочерние
+  елементы с позицией absolute будут отталкиватся от него - тобеж от .nav-bar__user */
   margin-left: auto;
   padding: .5rem 1rem;
   color: #fff;

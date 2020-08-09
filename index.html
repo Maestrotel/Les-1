@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Енотики фронта</title>
+  <script src="/assets/js/font-awesome/all.min.js"></script>
   <script>
     function addCss(name) {
       const link = document.createElement('link')
@@ -25,7 +26,27 @@
       <div class="nav-bar__links">
         <a href="/about.html" class="nav-bar__link">About</a>
       </div>
-      <div class="nav-bar__user">Dimon</div>
+      <div class="nav-bar__user">
+        <div class="login">Dimon</div>
+        <script>addCss('User/dropMenu')</script>
+        <div class="drop-menu">
+          <div class="drop-menu-links">
+            <div class="drop-menu-link">
+              <i class="far fa-user"></i>
+              <span>Profile</span>
+            </div>
+            <div class="drop-menu-link">
+              <i class="far fa-envelope"></i>
+              <span>Messages</span>
+            </div>
+            <div class="drop-menu-link">
+              <i class="far fa-keyboard"></i>
+              <span>Change password</span>
+            </div>
+            <div class="drop-menu-link">Logout</div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
   <script>
@@ -57,29 +78,40 @@
     <div class="container">
       <div class="footer-items">
         <div class="social">
-          <p>Social:</p>
-            <br/>
-          <p><a href="https://www.instagram.com/maestro0704/">Instagram</a></p>
-            <br/>
-          <p><a href="https://www.facebook.com/dima.telechkun">Facebook</a></p>
-            <br/>
-          <p><a href="https://vk.com/dmitry_telechkun">VK</a></p>
+          <div class="social__title footer-underline">Social:</div>
+          <div class="social__links">
+            <a class="footer-link" href="https://www.instagram.com/maestro0704/">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a class="footer-link" href="https://www.facebook.com/dima.telechkun">
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>  
+            </a>
+            <a class="footer-link" href="https://vk.com/dmitry_telechkun">
+              <i class="fab fa-vk"></i>
+              <span>VK</span>
+            </a>
+          </div>
         </div>
         <div class="links">
-          <p>Activities:</p>
-            <br/>
-          <p>Navigation activities</p>
-            <br/>
-          <p>Music performance</p>
-            <br/>
-          <p>Sport trainings</p>
+          <div class="links__title footer-underline">Activities:</div>
+          <div class="links__links">
+            <p>Navigation activities</p>
+            <p>Music performance</p>
+            <p>Sport trainings</p>
+          </div>
         </div>
         <div class="contacts">
-          <p>Contacts:</p>
-            <br/>
-          <p>Kharkiv city</p>
-           <br/>
-          <p>Ukraine</p>
+          <div class="contacts__title footer-underline">Contacts:</div>
+          <div class="addresses-info">
+            <div class="city">Kharkiv city</div>
+            <div class="country">Ukraine</div>
+          </div>
+          <div class="phones">
+            <a href="tel:+380939876541" class="phone">+380939876541</a>
+          </div>
+          <a href="mailto:enot@kot.ua" class="email">enot@kot.ua</a>
         </div>
       </div>
       <div class="copyright">

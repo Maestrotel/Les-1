@@ -5,28 +5,24 @@ footer {
 
 .footer-items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
-  white-space: nowrap;
-  text-align: center;
-  color: #fff
+  align-content: center;
+  margin-bottom: 1rem;
 }
 
-.a {
-  text-decoration: none;
+.social__title, .links__title, .contacts__title {
   color: #fff;
 }
 
-.a:active {
-  color: rgb(255, 255, 255);
-}
 
-a:visited {
-  color: rgb(255, 255, 255);
-}
-
-.footer-items div {
-  height: 175px;
+.footer-underline::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #ff9800;
+  margin: .2rem 0 .5rem;
 }
 
 .copyright {
@@ -34,4 +30,40 @@ a:visited {
   color: #fff;
 }
 
+.footer-link {
+  display: block;
+  width: fit-content;
+  color: #fff;
+  margin: .2rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  transition: .3s;
+  padding-bottom: 2px;
+}
 
+.footer-link:hover {
+  border-bottom-color: #fff;
+}
+
+.links__links p {
+  color: #fff;
+}
+
+.addresses-info {
+  color: #fff;
+}
+
+.addresses-info .country {
+  text-transform: uppercase;
+}
+
+.addresses-info .city {
+  text-transform: capitalize;
+}
+
+.phones .phone, .email {
+  color: #fff;
+}
+
+.phones .phone:hover, .email:hover {
+  text-decoration: underline;
+}
