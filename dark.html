@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Dark theme title</title>
   <script src="/assets/js/font-awesome/all.min.js"></script>
+  <script src="/assets/js/includeCSS.js"></script>
   <script>
-    function addCss(name) {
-      const link = document.createElement('link')
-      link.rel = "stylesheet"
-      link.href = `/assets/styles/${name}.css`
-      const head = document.getElementsByTagName('head')
-      head[0].appendChild(link)
-    }
-    addCss('dark-theme')
+    // const z = ['main', 'dark/dark-theme'] //array // z === ['dark/dark-theme', 'main']
+    // z.forEach(function(css) {addCss(css)})
+    addCss('main')
+    addCss('dark/dark-theme')
   </script>
 </head>
 <body>
