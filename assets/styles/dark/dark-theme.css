@@ -65,9 +65,14 @@ padding: 1rem;
 }
 
 .js .js-text {
-color: #fff;
-float: left;
-padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.js .js-text p {
+  padding-left: 1rem;
+  text-indent: 1rem;
 }
 
 .Lang {
@@ -77,6 +82,11 @@ padding-left: 2rem;
   margin: 2rem 0 !important;
 }
 
+.Lang > div {
+  width: calc(100% / 3 - 2rem);
+  margin: 1rem;
+}
+
 .Lang .Lang1 {
   background-color: #222d31;
   box-shadow: 0 0 8px #8f3f77;
@@ -84,8 +94,10 @@ padding-left: 2rem;
   margin: 1rem 0;
 }
 
-.Lang .vue-icon {
-  margin: 1rem;
+.Lang .vue-icon img {
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
 }
 
 .Lang .vue-text {
@@ -108,9 +120,10 @@ padding-left: 2rem;
  
 }
 
-.Lang .react-icon {
-  margin: 1rem 0;
-  padding-left: 7rem;
+.Lang img {
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
 }
 
 .Lang .react-text {
@@ -133,9 +146,11 @@ padding-left: 2rem;
  
 }
 
-.Lang .angular-icon {
-  margin: 1rem 0;
-  padding-left: 7rem;
+.Lang .angular-icon img {
+
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
 }
 
 .Lang .angular-text {
@@ -154,10 +169,4 @@ padding-left: 2rem;
   font-weight: 600;
   color: #555;
   text-align: center;
-}
-
-@media (min-width: 500px) {
-  .Lang {
-    width: calc(100% / 3 - 2rem);
-  }
 }
