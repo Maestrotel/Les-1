@@ -78,13 +78,14 @@ padding: 1rem;
 .Lang {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 2rem 0 !important;
+  margin: 2rem 0;
 }
 
-.Lang > div {
-  width: calc(100% / 3 - 2rem);
-  margin: 1rem;
+@media (min-width: 1024px) {
+  .Lang > div {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem !important;
+  }
 }
 
 .Lang .Lang1 {
@@ -92,6 +93,11 @@ padding: 1rem;
   box-shadow: 0 0 8px #8f3f77;
   border-radius: 1rem;
   margin: 1rem 0;
+  transition: .3s;
+}
+
+.Lang .Lang1:hover {
+  color: #ff9800;
 }
 
 .Lang .vue-icon img {

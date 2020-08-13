@@ -15,8 +15,16 @@ footer {
   color: #fff;
 }
 
+.aboveline-footer {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ff9800;
+  box-shadow: 0 0 7px #ff9800;
+  margin-bottom: 1.5rem;
+}
 
-.footer-underline::after {
+.footer-underline:after {
   content: "";
   display: block;
   width: 42px;
