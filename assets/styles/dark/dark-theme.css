@@ -96,8 +96,8 @@ padding: 1rem;
   transition: .3s;
 }
 
-.Lang .Lang1:hover {
-  color: #ff9800;
+.hover-shadow:hover {
+  box-shadow: 0 0 8px #ff9800;
 }
 
 .Lang .vue-icon img {
