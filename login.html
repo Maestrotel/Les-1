@@ -6,28 +6,33 @@
   <title>Login</title>
   <script src="/assets/js/includeCSS.js"></script>
   <script>addCss('login/main')</script>
+  <script>addCss('main')</script>
 </head>
 <body>
-  <form action="/auth/login" method="GET">
-    <input type="text" name="name">
-    <input type="number">
-    <input type="button" value="number">
-    <input type="checkbox">
-    <input type="radio">
-    <input type="date">
-    <input type="color" name="" id="">
-    <input type="file" src="" alt="">
-    <input type="reset" value="reset">
-    <button type="submit">Submit</button>
-    <input type="tel" name="" id="">
-    <input type="password" name="" id="">
-    <input type="range" name="" id="">
-    <input type="url" name="" id="">
-    <select name="" id="">
-      <option value="lol">lol</option>
-      <option value="kek">kek</option>
-    </select>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-  </form>
+  <div class="auth">
+    <form>
+      <h1 class="title">Form Auth</h1>
+      <div class="form-group">
+        <input type="text" name="first-name" id="name" >
+        <label for="name">Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" id="email">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" id="password">
+        <label for="password">Password</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="offer" id="offer">
+        <label for="offer" class="text-offer">Согласен с пользовательским соглашением</дф>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-blue">Signup</button>
+        <input type="reset" class="btn btn-red" value="Reset">
+      </div>
+    </form>
+  </div>
 </body>
 </html>
