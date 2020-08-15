@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <script src="/assets/js/includeCSS.js"></script>
-  <script>addCss('login/main')</script>
+  <script>
+    function addCss(name) {
+      const link = document.createElement('link')
+      link.rel = "stylesheet"
+      link.href = `/assets/styles/${name}.css`
+      const head = document.getElementsByTagName('head')
+      head[0].appendChild(link)
+    }
+    addCss('/additional/forms')
+  </script>
 </head>
 <body>
-  <form action="/auth/login" method="GET">
-    <input type="text" name="name">
-    <input type="number">
-    <input type="button" value="number">
-    <input type="checkbox">
-    <input type="radio">
-    <input type="date">
-    <input type="color" name="" id="">
-    <input type="file" src="" alt="">
-    <input type="reset" value="reset">
-    <button type="submit">Submit</button>
-    <input type="tel" name="" id="">
-    <input type="password" name="" id="">
-    <input type="range" name="" id="">
-    <input type="url" name="" id="">
-    <select name="" id="">
-      <option value="lol">lol</option>
-      <option value="kek">kek</option>
-    </select>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-  </form>
+  <div class="auth">
+    <form>
+      <h1 class="title">Form Auth</h1>
+      <div class="form-field">
+        <input type="text"placeholder="Name" id="name">
+      </div>
+      <div class="form-field">
+        <input type="e-mail" placeholder="E-mail" id="e-mail">
+      </div>
+      <div class="form-field">
+        <input type="password" placeholder="Password" id="password">
+      </div>
+      <div class="form-field">
+        <input type="checkbox"name="offer" id="offer">
+        <label for="offer" class="text-offer">Согласен c пользовательским соглашением</label>
+      </div>
+      <div class="Buttons">
+        <button class="button-in">Sign in</button>
+        <input type="reset" class="button-res" value="Reset">
+      </div>
+    </form>
+  </div>
 </body>
 </html>
