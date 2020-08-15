@@ -58,6 +58,9 @@ body {
   font-weight: 700;
   text-align: center;
   color: #fff;
+  background-color: #263238;
+  display: block;
+  margin: 0;
 }
 
 .js {
