@@ -1,9 +1,10 @@
 .auth form {
-width: fit-content;
-box-shadow: 0 0 4px rgba(0,0,0,0.4);
-padding: 1rem;
-border-radius: 1rem;
-margin: 2.5rem auto;
+  width: fit-content;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 2.5rem auto;
+  min-width: 420px;
 }
 
 .title {
@@ -16,10 +17,29 @@ margin: 2.5rem auto;
 
 .form-field {
   position: relative;
-  outline: none;
+}
+
+.form-field input:not([type=checkbox]) {
+  border: none;
   display: block;
-  top: 1rem;
-  left: .2;
+  border-bottom: 1px solid #d9d9d9;
+  width: calc(100% - 1rem);
+  padding: .5rem;
+  margin-top: .5rem;
+  outline: none !important;
+}
+
+.form-field input:not([type=checkbox]):focus + label.anime {
+  top: -.8rem;
+  left: 0;
+  font-size: .8rem;
+}
+
+.form-field label.anime {
+  position: absolute;
+  z-index: 1;
+  top: .5rem;
+  left: .5rem;
   transition: .3s;
 }
 
