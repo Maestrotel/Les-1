@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <script src="/assets/js/font-awesome/all.min.js"></script>
   <script>
     function addCss(name) {
       const link = document.createElement('link')
@@ -17,6 +18,46 @@
   </script>
 </head>
 <body>
+  <nav>
+    <div class="navBarWrapper">
+      <a href="/" class="nav-bar__logo">
+        <span class="name">Enoti</span>
+        <span class="domain">.com</span>
+      </a>
+      <div class="nav-bar__links">
+        <a href="/about.html" class="nav-bar__link">About</a>
+        <a href="/dark.html" class="nav-bar__link">Dark Theme</a>
+        <a href="/login.html" class="nav-bar__link">Login</a>
+      </div>
+      <div class="nav-bar__user">
+        <div class="login">Dimon</div>
+        <script>addCss('User/dropMenu')</script>
+        <div class="drop-menu">
+          <div class="drop-menu-links">
+            <div class="drop-menu-link">
+              <i class="far fa-user"></i>
+              <span>Profile</span>
+            </div>
+            <div class="drop-menu-link">
+              <i class="far fa-envelope"></i>
+              <span>Messages</span>
+            </div>
+            <div class="drop-menu-link">
+              <i class="far fa-keyboard"></i>
+              <span>Change password</span>
+            </div>
+            <div class="drop-menu-link">
+              <i class="far fa-times-circle"></i>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    addCss('navbar')
+  </script>
   <div class="auth">
     <form>
       <h1 class="title">Form Auth</h1>
@@ -25,10 +66,12 @@
         <label for="name" class="anime">Name</label>
       </div>
       <div class="form-field">
-        <input type="e-mail" placeholder="E-mail" id="e-mail">
+        <input type="e-mail" id="e-mail">
+        <label for="e-mail" class="anime">E-mail</label>
       </div>
       <div class="form-field">
-        <input type="password" placeholder="Password" id="password">
+        <input type="password" id="password">
+        <label for="password" class="anime">Password</label>
       </div>
       <div class="form-field">
         <input type="checkbox"name="offer" id="offer">
@@ -40,5 +83,59 @@
       </div>
     </form>
   </div>
+  <footer>
+    <div class="container">
+      <div class="footer-items">
+        <div class="social">
+          <div class="social__title footer-underline">Social:</div>
+          <div class="social__links">
+            <a class="footer-link" href="https://www.instagram.com/maestro0704/">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a class="footer-link" href="https://www.facebook.com/dima.telechkun">
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>  
+            </a>
+            <a class="footer-link" href="https://vk.com/dmitry_telechkun">
+              <i class="fab fa-vk"></i>
+              <span>VK</span>
+            </a>
+          </div>
+        </div>
+        <div class="links">
+          <div class="links__title footer-underline">Activities:</div>
+          <div class="links__links">
+            <p>Navigation activities</p>
+            <p>Music performance</p>
+            <p>Sport trainings</p>
+          </div>
+        </div>
+        <div class="feedback">
+          <div class="links__title footer-underline">Questions:</div>
+          <div class="links__links">
+            <p>FAQ</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts__title footer-underline">Contacts:</div>
+          <div class="addresses-info">
+            <div class="city">Kharkiv city</div>
+            <div class="country">Ukraine</div>
+          </div>
+          <div class="phones">
+            <a href="tel:+380939876541" class="phone">+380939876541</a>
+          </div>
+          <a href="mailto:enot@kot.ua" class="email">enot@kot.ua</a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy;Maestro inc.
+      </div>
+    </div>
+  </footer>
+  <script>
+    addCss('footer')
+  </script>
 </body>
 </html>

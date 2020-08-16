@@ -4,7 +4,13 @@
   padding: 1rem;
   border-radius: 1rem;
   margin: 2.5rem auto;
+  margin-bottom: 15rem;
   min-width: 420px;
+  background-color: rgba(241, 236, 225, 0.4);
+}
+
+.auth form:hover {
+  box-shadow: 0 0 9px rgba(0,0,0,0.4);
 }
 
 .title {
@@ -13,7 +19,9 @@
   font-style: normal;
   font-weight: 700;
   font-family: Arial;
+  text-shadow: 0 0 7px rgba(2, 252, 2, 0.4)
 }
+
 
 .form-field {
   position: relative;
@@ -27,6 +35,8 @@
   padding: .5rem;
   margin-top: .5rem;
   outline: none !important;
+  margin-bottom: 1rem;
+  background-color: rgba(245, 247, 244, 0.4);
 }
 
 .form-field input:not([type=checkbox]):focus + label.anime {
@@ -54,13 +64,23 @@
   top: 0 !important;
 }
 
+.Buttons {
+  margin-top: 1rem;
+}
+
 .button-in {
   border-color: rgb(70, 70, 247);
   box-shadow: rgb(70, 70, 247);
   transition: .3s;
   color: rgb(70, 70, 247);
   font-weight: 700;
-  padding: 0.2rem;
+  padding: 0.7rem;
+  background-color: rgb(201, 197, 223);
+  cursor: pointer;
+  border-radius: .5rem;
+  width: 30%;
+  margin-right: 10rem;
+  outline: none !important;
 }
 
 .button-res {
@@ -69,14 +89,34 @@
   transition: .3s;
   color: rgba(252, 89, 67);
   font-weight: 700;
-  padding: 0.2rem;
+  padding: 0.7rem;
+  background-color: rgb(231, 220, 220);
+  cursor: pointer;
+  border-radius: .5rem;
+  width: 30%;
+  outline: none !important;
 }
 
-.Buttons .button:hover {
-  box-shadow: 0 0 4px rgba (0, 0, 0, 0.4)
+.auth .Buttons .button-in:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-color: springgreen;
+  color: blue;
+  text-shadow: 0 0 4px rgba(80, 66, 206, 0.4);
 }
 
-.Buttons .button:active {
-  box-shadow: inset 0 0 4px rgba (0, 0, 0, 0.4)
+.button-in:active {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.button-res:hover {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  border-color: springgreen;
+  color: rgb(252, 5, 5);
+  text-shadow: 0 0 4px rgba(252, 2, 2, 0.4);
+}
+
+.button-res:active {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+  border: 0;
 }
 
