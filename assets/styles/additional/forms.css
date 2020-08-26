@@ -29,10 +29,12 @@
   outline: none !important;
 }
 
-.form-field input:not([type=checkbox]):focus + label.anime {
+.form-field input:not([type=checkbox]):focus + label.anime,
+.form-field input:not([type=checkbox]):valid + label.anime {
   top: -.8rem;
   left: 0;
   font-size: .8rem;
+  color: rgb(72, 70, 190);
 }
 
 .form-field label.anime {

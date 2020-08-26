@@ -1,0 +1,23 @@
+{
+  "name": "les-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index",
+    "prod": "",
+    "start": "node ./prod/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maestro777111333/Les-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maestro777111333/Les-1/issues"
+  },
+  "homepage": "https://github.com/Maestro777111333/Les-1#readme"
+}
