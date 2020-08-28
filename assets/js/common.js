@@ -1,18 +1,17 @@
-var // Не используется
+const firstCard = document.querySelector('.card-wedding')
+firstCard.addEventListener('click', function () {
+  firstCard.classList.toggle('bg-red')
+})
 
-const cantChange = 14
-cantChange = 19 // Даст ошибку
+const dotObj = {
+  x: 0,
+  y: 0
+}
 
-let canChange = '15'
-canChange = 16
-
-const boolen = true
-const boolNum = 0
-
-cantChange + boolen
-
-const name = 'Dima'
-const city = 'Kharkov'
-
-const nameCity = name + city // 'DimaKharkov'
-
+const dot = document.getElementById('dot')
+dot.addEventListener('mouseover', function () {
+  dotObj.x = dotObj.x + 200
+  dotObj.y = dotObj.y + 200
+  dot.style.left = dotObj.x + 'px'
+  dot.style.top = dotObj.y + 'px'
+})
