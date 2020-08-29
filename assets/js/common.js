@@ -9,9 +9,9 @@ const dotObj = {
 }
 
 const dot = document.getElementById('dot')
-dot.addEventListener('mouseover', function () {
+dot.addEventListener('click', function () {
   dotObj.x = dotObj.x + 200
-  dotObj.y = dotObj.y + 200
+  dotObj.y = dotObj.y + 100
   dot.style.left = dotObj.x + 'px'
   dot.style.top = dotObj.y + 'px'
 })
