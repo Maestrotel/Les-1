@@ -1,167 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Енотики фронта</title>
-  <script src="/assets/js/font-awesome/all.min.js"></script>
-  <script>
-    function addCss(name) {
-      const link = document.createElement('link')
-      link.rel = "stylesheet"
-      link.href = `/assets/styles/${name}.css`
-      const head = document.getElementsByTagName('head')
-      head[0].appendChild(link)
-    }
-    addCss('main')
-  </script>
-</head>
-<body>
-  <div class="dot" id="dot"></div>
-  <script>addCss('dot')</script>
-  <nav>
-    <div class="navBarWrapper">
-      <a href="/" class="nav-bar__logo">
-        <span class="name">Enoti</span>
-        <span class="domain">.com</span>
-      </a>
-      <div class="nav-bar__links">
-        <a href="/about.html" class="nav-bar__link">About</a>
-        <a href="/dark.html" class="nav-bar__link">Dark Theme</a>
-        <a href="/Login.html" class="nav-bar__link">Login</a>
-      </div>
-      <div class="nav-bar__user">
-        <div class="login">Dimon</div>
-        <script>addCss('User/dropMenu')</script>
-        <div class="drop-menu">
-          <div class="drop-menu-links">
-            <div class="drop-menu-link">
-              <i class="far fa-user"></i>
-              <span>Profile</span>
-            </div>
-            <div class="drop-menu-link">
-              <i class="far fa-envelope"></i>
-              <span>Messages</span>
-            </div>
-            <div class="drop-menu-link">
-              <i class="far fa-keyboard"></i>
-              <span>Change password</span>
-            </div>
-            <div class="drop-menu-link">
-              <i class="far fa-times-circle"></i>
-              <span>Logout</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Енотики фронта</title>
+    <script src="./assets/js/font-awesome/all.min.js"></script>
+    <script>
+      function addCss(name) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = `/assets/styles/${name}.css`;
+        const head = document.getElementsByTagName("head");
+        head[0].appendChild(link);
+      }
+      addCss("main");
+    </script>
+  </head>
+  <body>
+    <div class="dot" id="dot"></div>
+    <script>
+      addCss("dot");
+    </script>
+    <nav>
+      <div class="navBarWrapper">
+        <a href="/" class="nav-bar__logo">
+          <span class="name">Enoti</span>
+          <span class="domain">.com</span>
+        </a>
+        <div class="nav-bar__links">
+          <a href="./about.html" class="nav-bar__link">About</a>
+          <a href="./dark.html" class="nav-bar__link">Dark Theme</a>
+          <a href="./Login.html" class="nav-bar__link">Login</a>
+        </div>
+        <div class="nav-bar__user">
+          <div class="login">Dimon</div>
+          <script>
+            addCss("User/dropMenu");
+          </script>
+          <div class="drop-menu">
+            <div class="drop-menu-links">
+              <div class="drop-menu-link">
+                <i class="far fa-user"></i>
+                <span>Profile</span>
+              </div>
+              <div class="drop-menu-link">
+                <i class="far fa-envelope"></i>
+                <span>Messages</span>
+              </div>
+              <div class="drop-menu-link">
+                <i class="far fa-keyboard"></i>
+                <span>Change password</span>
+              </div>
+              <div class="drop-menu-link">
+                <i class="far fa-times-circle"></i>
+                <span>Logout</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </nav>
+    <script>
+      addCss("navbar");
+    </script>
+    <div
+      class="head-baner"
+      style="background-image: url('/assets/images/Wedding.jpg')"
+    >
+      <div class="head-baner-text">Свадьба Юрия и Александры!</div>
     </div>
-  </nav>
-  <script>
-    addCss('navbar')
-  </script>
-  <div class="head-baner" style="background-image: url('/assets/images/Wedding.jpg');">
-    <div class="head-baner-text">
-      Свадьба Юрия и Александры!
-    </div>
-  </div>
-  <script>
-    addCss('headBaner')
-  </script>
-  <div class="container">
-    <div class="cards-wrapper">
-      <div class="card">
-        <div class="card-wedding">
-          <div class="header">
-            <img src="/assets/images/Wedding-main.jpg" alt="Picture" width="100%">
-          </div>
-          <div class="content">
-            <p> День, когда сердца Юрия и Александры слились воедино.</p>
-          </div>
-          <div class="footer">
-            <button>Press</button>
-          </div>
-        </div>
-        <div class="card-guitar">
-          <div class="header">
-            <img src="/assets/images/Guitar.jpg" alt="Picture" width="100%">
-          </div>
-          <div class="content">
-            <p> Музыкальная жизнь Димона.</p>
-          </div>
-          <div class="footer-rock">
-            <button><p>Мои концерты</p></button>
-            <br/>
-          </div>
-        </div>
-        <div class="card-city">
-          <div class="header">
-            <img src="/assets/images/Kharkov.jpg" alt="Picture" width="100%">
-          </div>
-          <div class="content">
-            <p> Харьков - Первая столица.</p>
-            <br/>
-          </div>
-          <div class="footer-city">
-            <button>О городе</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
+    <script>
+      addCss("headBaner");
+    </script>
     <div class="container">
-      <div class="footer-items">
-        <div class="social">
-          <div class="social__title footer-underline">Social:</div>
-          <div class="social__links">
-            <a class="footer-link" href="https://www.instagram.com/maestro0704/">
-              <i class="fab fa-instagram"></i>
-              <span>Instagram</span>
-            </a>
-            <a class="footer-link" href="https://www.facebook.com/dima.telechkun">
-              <i class="fab fa-facebook"></i>
-              <span>Facebook</span>  
-            </a>
-            <a class="footer-link" href="https://vk.com/dmitry_telechkun">
-              <i class="fab fa-vk"></i>
-              <span>VK</span>
-            </a>
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="card-wedding">
+            <div class="header">
+              <img
+                src="/assets/images/Wedding-main.jpg"
+                alt="Picture"
+                width="100%"
+              />
+            </div>
+            <div class="content">
+              <p>День, когда сердца Юрия и Александры слились воедино.</p>
+            </div>
+            <div class="footer">
+              <button>Press</button>
+            </div>
+          </div>
+          <div class="card-guitar">
+            <div class="header">
+              <img src="/assets/images/Guitar.jpg" alt="Picture" width="100%" />
+            </div>
+            <div class="content">
+              <p>Музыкальная жизнь Димона.</p>
+            </div>
+            <div class="footer-rock">
+              <button><p>Мои концерты</p></button>
+              <br />
+            </div>
+          </div>
+          <div class="card-city">
+            <div class="header">
+              <img
+                src="/assets/images/Kharkov.jpg"
+                alt="Picture"
+                width="100%"
+              />
+            </div>
+            <div class="content">
+              <p>Харьков - Первая столица.</p>
+              <br />
+            </div>
+            <div class="footer-city">
+              <button>О городе</button>
+            </div>
           </div>
         </div>
-        <div class="links">
-          <div class="links__title footer-underline">Activities:</div>
-          <div class="links__links">
-            <p>Navigation activities</p>
-            <p>Music performance</p>
-            <p>Sport trainings</p>
-          </div>
-        </div>
-        <div class="feedback">
-          <div class="links__title footer-underline">Questions:</div>
-          <div class="links__links">
-            <p>FAQ</p>
-          </div>
-        </div>
-        <div class="contacts">
-          <div class="contacts__title footer-underline">Contacts:</div>
-          <div class="addresses-info">
-            <div class="city">Kharkiv city</div>
-            <div class="country">Ukraine</div>
-          </div>
-          <div class="phones">
-            <a href="tel:+380939876541" class="phone">+380939876541</a>
-          </div>
-          <a href="mailto:enot@kot.ua" class="email">enot@kot.ua</a>
-        </div>
-      </div>
-      <div class="copyright">
-        &copy;Maestro inc.
       </div>
     </div>
-  </footer>
-  <script>
-    addCss('footer')
-  </script>
-  <script src="/assets/js/common.js"></script>
-</body>
+    <footer>
+      <div class="container">
+        <div class="footer-items">
+          <div class="social">
+            <div class="social__title footer-underline">Social:</div>
+            <div class="social__links">
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/maestro0704/"
+              >
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/dima.telechkun"
+              >
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+              <a class="footer-link" href="https://vk.com/dmitry_telechkun">
+                <i class="fab fa-vk"></i>
+                <span>VK</span>
+              </a>
+            </div>
+          </div>
+          <div class="links">
+            <div class="links__title footer-underline">Activities:</div>
+            <div class="links__links">
+              <p>Navigation activities</p>
+              <p>Music performance</p>
+              <p>Sport trainings</p>
+            </div>
+          </div>
+          <div class="feedback">
+            <div class="links__title footer-underline">Questions:</div>
+            <div class="links__links">
+              <p>FAQ</p>
+            </div>
+          </div>
+          <div class="contacts">
+            <div class="contacts__title footer-underline">Contacts:</div>
+            <div class="addresses-info">
+              <div class="city">Kharkiv city</div>
+              <div class="country">Ukraine</div>
+            </div>
+            <div class="phones">
+              <a href="tel:+380939876541" class="phone">+380939876541</a>
+            </div>
+            <a href="mailto:enot@kot.ua" class="email">enot@kot.ua</a>
+          </div>
+        </div>
+        <div class="copyright">&copy;Maestro inc.</div>
+      </div>
+    </footer>
+    <script>
+      addCss("footer");
+    </script>
+    <script src="./assets/js/common.js"></script>
+  </body>
 </html>
