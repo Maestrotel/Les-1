@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #263238;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 240px) {
+  .container {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 380px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 570px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 980px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1380px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1480px;
+  }
+}
+
+.js .Mainjs-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #263238;
+  display: block;
+  margin: 0;
+}
+
+.js {
+padding: 1rem;
+}
+
+.js .js-text {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.js .js-text p {
+  padding-left: 1rem;
+  text-indent: 1rem;
+}
+
+.Lang {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .Lang > div {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem !important;
+  }
+}
+
+.Lang .Lang1 {
+  background-color: #222d31;
+  box-shadow: 0 0 8px #8f3f77;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 8px #ff9800;
+}
+
+.Lang .vue-icon img {
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
+}
+
+.Lang .vue-text {
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: inherit;
+}
+
+.Lang .vue-text p {
+  text-indent: 1rem;
+}
+
+.Lang2 {
+  background-color: #222d31;
+  box-shadow: 0 0 8px #8f3f77;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+ 
+}
+
+.Lang img {
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
+}
+
+.Lang .react-text {
+  padding: 0 1rem 2rem 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: inherit;
+}
+
+.Lang .react-text p {
+  text-indent: 1rem;
+}
+
+.Lang3 {
+  background-color: #222d31;
+  box-shadow: 0 0 8px #8f3f77;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+ 
+}
+
+.Lang .angular-icon img {
+
+  display: block !important;
+  margin: .5rem auto !important;
+  padding: 0 !important;
+}
+
+.Lang .angular-text {
+  padding: 0 1rem 2rem 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: inherit;
+}
+
+.Lang .angular-text p {
+  text-indent: 1rem;
+}
+
+.card .content {
+  padding: 1rem;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+}

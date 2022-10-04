@@ -1,0 +1,9 @@
+input {
+  padding: .5rem 1rem;
+  font: 1rem;
+  border-radius: 4px;
+  border: 1px solid #222;
+  background-color: #fff;
+  display: block;
+  margin: .5rem;
+}

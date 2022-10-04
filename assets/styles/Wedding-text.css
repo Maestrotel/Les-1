@@ -1,0 +1,11 @@
+.Wedding-text {
+  width: 100%;
+  text-align: center;
+  align-self: flex-start;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  background-color: rgba(253, 206, 245, 0.6);
+  color: rgb(19, 2, 253);
+}

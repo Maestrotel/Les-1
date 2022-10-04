@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Енотики фронта</title>
-  <script src="./assets/js/font-awesome/all.min.js"></script>
+  <title>Login</title>
+  <script src="/assets/js/font-awesome/all.min.js"></script>
   <script>
     function addCss(name) {
       const link = document.createElement('link')
@@ -13,6 +13,7 @@
       const head = document.getElementsByTagName('head')
       head[0].appendChild(link)
     }
+    addCss('/additional/forms')
     addCss('main')
   </script>
 </head>
@@ -24,9 +25,9 @@
         <span class="domain">.com</span>
       </a>
       <div class="nav-bar__links">
-        <a href="./about.html" class="nav-bar__link">About</a>
-        <a href="./dark.html" class="nav-bar__link">Dark Theme</a>
-        <a href="./login.html" class="nav-bar__link">Login</a>
+        <a href="/about.html" class="nav-bar__link">About</a>
+        <a href="/dark.html" class="nav-bar__link">Dark Theme</a>
+        <a href="/login.html" class="nav-bar__link">Login</a>
       </div>
       <div class="nav-bar__user">
         <div class="login">Dimon</div>
@@ -57,27 +58,30 @@
   <script>
     addCss('navbar')
   </script>
-  <div class="head-baner" style="background-image: url('./assets/images/zveri.jpg');">
-    <div class="head-baner-text">
-      Хочу слетать в Австралию
-    </div>
-  </div>
-  <script>
-    addCss('headBaner')
-  </script>
-  <div class="middle-text">
-    <p>Австралия (Австралийский Союз, Commonwealth of Australia) занимает континент Австралия, остров
-    ТасманияГеографические координаты: -42.866667,147.316667;</p>
-    <p>Щелкните для просмотра на Google-картах и ряд других островов Индийского, Тихого и Южного океанов. К северу от Австралии расположены Восточный Тимор, Индонезия и Папуа —
-    Новая Гвинея, к северо-востоку — Вануату, Новая Каледония и Соломоновы Острова, к юго-востоку — Новая Зеландия.</p>
-    <p>Австралийский материк разделяет собой Индийский и Тихий океан. Часто по географическому и геополитическому признаку
-    Австралию включают в регион Австралия и Океания.</p>
-  </div>
-  <script>
-    addCss('middle-text')
-  </script>
-  <div class="container">
-    <h1 class="m-1">Хай ку привет, здарова</h1>
+  <div class="auth">
+    <form>
+      <h1 class="title">Form Auth</h1>
+      <div class="form-field">
+        <input type="" id="name" autocomplete="none">
+        <label for="name" class="anime">Name</label>
+      </div>
+      <div class="form-field">
+        <input type="e-mail" id="e-mail">
+        <label for="e-mail" class="anime">E-mail</label>
+      </div>
+      <div class="form-field">
+        <input type="password" id="password">
+        <label for="password" class="anime">Password</label>
+      </div>
+      <div class="form-field">
+        <input type="checkbox"name="offer" id="offer">
+        <label for="offer" class="text-offer">Согласен c пользовательским соглашением</label>
+      </div>
+      <div class="Buttons">
+        <button class="button-in">Sign in</button>
+        <input type="reset" class="button-res" value="Reset">
+      </div>
+    </form>
   </div>
   <footer>
     <div class="container">

@@ -1,19 +1,22 @@
-.head-baner {
-  height: calc(100vh - 41.6px);
-  min-height: 350px;
+.banner {
+  height: 85vh;
+  min-height: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
-  background-position: center;
 }
 
-.head-baner-text {
+.banner-text {
   width: 100%;
   text-align: center;
   align-self: flex-start;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 2rem;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
+}
+
+.Picture {
+  display: flex;
 }

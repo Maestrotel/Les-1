@@ -6,6 +6,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #fdfdfd;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -35,9 +37,27 @@ a {
   }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1024px) {
   .container {
-    width: 1366px;
+    width: 980px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1380px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1480px;
   }
 }
 
@@ -46,7 +66,7 @@ a {
 }
 
 .bg-red {
-  background-color: red;
+  background-color: red !important;
 }
 
 .p-1 {
@@ -61,10 +81,158 @@ a {
   margin: 1rem;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
 .m-0auto {
   margin: 0 auto;
 }
 
 .d-block {
   display: block;
+}
+
+.card .card-wedding {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0, .2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.card .card-guitar {
+  background-color: rgb(245, 167, 167);
+  box-shadow: 0 0 8px rgba(0,0,0, .2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.card .card-city {
+  background-color: rgb(250, 252, 169);
+  box-shadow: 0 0 8px rgba(0,0,0, .2);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: .3s;
+}
+
+.card-wedding:hover {
+  transform: scale(1.1);
+}
+
+.card-guitar:hover {
+  transform: scale(1.1);
+}
+
+.card-city:hover {
+  transform: scale(1.1);
+}
+
+.card .header img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card .content {
+  padding: 1rem;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+}
+
+.card .footer {
+  padding: 1rem;
+}
+
+.card .footer button {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  background-color: #1976d2;
+  border: 0;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  outline: none !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card .footer button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+.card .footer button:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
+}
+
+.card .footer-rock button {
+  white-space: nowrap;
+  background-image: url(/assets/images/Button.png);
+  display: block;
+  font-size: 1rem;
+  font-style: unset;
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  outline: none !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card .footer-rock button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+.card .footer-rock button:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
+}
+
+.card .footer-city button {
+  white-space: nowrap;
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  background-color: #06c016;
+  border: 0;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  outline: none !important;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card .footer-city button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, .4);
+}
+
+.card .footer-city button:active {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .4);
+}
+
+.cards-wrapper .card {
+  margin: 2rem 0;
+  /* display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 1fr)); /* === 1fr 1fr 1fr */
+  /*grid-gap: 2rem; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card > div {
+  width: 100%;
+  margin: 1rem !important;
+}
+
+@media (min-width: 1024px) {
+  .card > div {
+    width: calc(100% / 3 - 2rem);
+  }
 }

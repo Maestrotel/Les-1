@@ -1,0 +1,11 @@
+.dot {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  transition: 5s;
+  z-index: 100;
+}
